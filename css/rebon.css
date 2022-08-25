@@ -33,6 +33,7 @@
 @media (max-width: 1023px){
     .slide__2{
         width: 100%;
+        /* padding-top: -200px; */
     }
     .slide__item{
         display: none;
@@ -41,7 +42,7 @@
         display: none !important;
     }
     .slide__item-mid{
-        margin-top: -53px;
+        margin-top: -150px;
         width: 80% !important;
     }
     .slide__item-mid img{

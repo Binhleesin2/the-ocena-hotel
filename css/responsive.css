@@ -31,6 +31,9 @@
 }
 
 @media (max-width: 740px){
+    .slide{
+        margin-top: 40px;
+    }
     .slide__img {
         width: 100%;
         text-align: center;
@@ -355,7 +358,7 @@
         display: flex;
         width: 100%;
         flex-direction: column;
-        min-height: 1450px;
+        min-height: 1350px;
         justify-content: center;
     }
     .footer__all{
@@ -391,7 +394,7 @@
         /* display: none; */
     }
     .footer__logo-top{
-        margin-top: -151px;
+        margin-top: -101px;
     }
     .footer__logo-top img_{
         /* margin-top: 80px; */
