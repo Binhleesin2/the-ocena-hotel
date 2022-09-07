@@ -200,6 +200,9 @@
 }
 
 @media (max-width: 360px) {
+    .slide__content-img img{
+        height: 980px !important;
+    }
     .text__slide-show-left{
         height: 430px;
     }
@@ -347,7 +350,7 @@
 
 @media (max-width: 360px) {
     .feedback__img >img{
-        min-height: 750px;
+        height: 700px;
     }
 }
 
