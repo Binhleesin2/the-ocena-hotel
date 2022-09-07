@@ -210,6 +210,12 @@
     }
 }
 
+@media (max-width: 360px) {
+    .header__bottom h2{
+        padding: 0 15px;
+    }
+}
+
 @media (max-width: 1023px){
     .footer__input{
         width: 100%;
