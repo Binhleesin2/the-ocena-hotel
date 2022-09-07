@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Montserrat-Regular';
+    font-display: swap;
+    src: url('../font/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    font-display: swap;
+    src: url('../font/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'VNI-ShellaL';
+    font-display: swap;
+    src: url('../font/VNI-ShellaL.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'VNF-Comic Sans';
+    font-display: swap;
+    src: url('../font/VNF-Comic Sans.ttf') format('truetype');
+}
+
+.footer{
+    margin-top: 56px;
+    min-height: 470px;
+    background: #191919;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat-Regular';
+}
+.footer__all{
+    width: 1147px;
+}
+.footer__top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 23px;
+}
+.footer__top-right{
+    width: 100%;
+    border: 1px solid #FFFFFF;
+}
+.footer__top-left{
+    width: 100%;
+    border: 1px solid #FFFFFF;
+}
+.footer__mid{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.contact__network{
+    width: 205px;
+    height: 50px;
+    border: 0.5px solid #E8E9E7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact__network a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer__list-content >h6{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #D09754;
+}
+.footer__list-content p{
+    margin: 10px 0;
+    font-size: 14px;
+}
+.footer__list-content a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer__list-content{
+    position: relative;
+    /* margin: 0 35px; */
+}
+.footer__mid-content{
+    display: flex;
+    justify-content: space-between;
+}
+.contact__network-list{
+    border: 0.5px solid #E8E9E7;
+    height: 50px;
+}
+.contact__network >i{
+    margin: 0 17px;
+}
+.footer__email{
+    width: 200px !important;
+}
+.footer__map >img{
+    width: 205px;
+    height: 122px;
+}
+.all__underlined{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 27px;
+}
+.underlined{
+    border: 1px solid #FFFFFF;
+    width: 1147px;
+}
+.footer__bottom{
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.partners h6{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #D09754;
+    /* margin: 0 340px; */
+}
+.all__partners{
+    display: flex;
+    margin-top: 7px;
+}
+.partners__mid{
+    margin: 0 11px;
+}
+.partners__bottom{
+    background: #fff;
+}
+.footer__list-content p:hover{
+    color: #D09754;
+}
+
+@media (max-width: 1023px){
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        min-height: 1150px;
+    }
+    .footer__all{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .footer__top{
+        /* margin-top: -200px; */
+        width: 100%;
+        align-items: center;
+        display: flex;
+    }
+    .all__underlined{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .underlined{
+        width: 100%;
+    }
+    .footer__logo-top{
+        margin-top: -101px;
+    }
+    .footer__logo-top img_{
+        width: 80%;
+    }
+    .footer__mid{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__list-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__mid-content{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .footer__list-content >h6{
+        margin-top: 15px;
+    }
+    .footer__list-content p{
+        margin: 5px 0;
+    }
+    .footer__email{
+        width: 100% !important;
+    }
+    .footer__map{
+        width: 100%;
+    }
+    .footer__map img{
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+    .footer__input{
+        border: none;
+    }
+    .footer__bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .partners{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

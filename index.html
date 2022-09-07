@@ -6,17 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the ocena hotel</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
     <div class="app">
         <div class="header">
-            <div class="navbar__all">
+            <!-- <div class="navbar__all">
                 <div class="navbar__left">
                     <div class="navbar__left-dot"></div>
                     <p class="text__content">Lorem ipsum dolor sit amet.</p>
@@ -38,50 +44,61 @@
                     <i class="fa-solid fa-caret-down"></i>
                     </p>
                 </div>
-            </div>
-    
+            </div> -->
+
             <div class="menu">
-                <div class="logo">
-                    <img class="logo__img" src="./img/FTE-Group-logo-Quy-chuẩn 1 (1).png" alt="">
+                <div class="logo" style="margin-left: 46px; margin-right:96px;">
+                    <a href="./index.html">
+                        <img class="logo__img" src="./img/FTE-Group-logo-Quy-chuẩn 1 (1).png" alt="">  
+                    </a>
                 </div>
-    
+
                 <ul class="list__menu">
-                    <li><a href="./index2.html">Loại phòng</a></li>
-                    <li><a href="">Tinh hoa ẩm thực</a></li>
-                    <li><a href="">Hội nghị</a></li>
-                    <li><a href="">Spa</a></li>
-                    <li><a href="">Tiện ích</a></li>
-                    <li><a href="">Tour</a></li>
-                    <li><a href="">Liên hệ</a></li>
-                    <li class="menu__option"><a href="">Nhận tư vấn</a></li>
+                    <li><a href="#room">Loại phòng</a></li>
+                    <li><a href="./elite.html">Tinh hoa ẩm thực</a></li>
+                    <li><a href="#conference">Hội nghị</a></li>
+                    <li><a href="#spa">Spa</a></li>
+                    <li><a href="./pool.html">Tiện ích</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                    <li class="menu__option"><a href="./index2.html">Nhận tư vấn</a></li>
                 </ul>
-    
-                <input type="checkbox" name="" hidden class="nav__input" id="nav__mobile-input">
-                <label for="nav__mobile-input" class="nav__bars-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <label for="nav__mobile-input" class="nav__overlay"></label>
-    
-                <div class="menu__mobile">
-                    <label for="nav__mobile-input" class="nav__mobile-close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </label>
-                    <ul class="list__menu-mobile">
-                        <li><a href="/index2.html">Loại phòng</a></li>
-                        <li><a href="">Tinh hoa ẩm thực</a></li>
-                        <li><a href="">Hội nghị</a></li>
-                        <li><a href="">Spa</a></li>
-                        <li><a href="">Tiện ích</a></li>
-                        <li><a href="">Tour</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                        <li class="menu__option-mobile"><a href="">Nhận tư vấn</a></li>
-                    </ul>
+
+                <div class="menu__mobile-all">
+                    <div class="logo__mobile">
+                        <div class="logo__image-mobile">
+                            <a href="./index.html">
+                                <img class="logo__img-mobile" src="./img/FTE-Group-logo-Quy-chuẩn 1 (1).png" alt="">
+                            </a>
+                        </div>
+                        <input type="checkbox" name="" hidden class="nav__input" id="nav__mobile-input">
+                        <label for="nav__mobile-input" class="nav__bars-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <label for="nav__mobile-input" class="nav__overlay"></label>
+                        <div class="menu__mobile">
+                            <label for="nav__mobile-input" class="nav__mobile-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label>
+                            <ul class="list__menu-mobile">
+                                <li><a href="#room">Loại phòng</a></li>
+                                <li><a href="./elite.html">Tinh hoa ẩm thực</a></li>
+                                <li><a href="#conference">Hội nghị</a></li>
+                                <li><a href="#spa">Spa</a></li>
+                                <li><a href="./pool.html">Tiện ích</a></li>
+                                <li><a href="#tour">Tour</a></li>
+                                <li><a href="#contact">Liên hệ</a></li>
+                                <li class="menu__option-mobile"><a href="./index2.html">Nhận tư vấn</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="slide">
             <div class="slide__img">
+                <img src="./img/Rectangle 7.jpg" alt="">
                 <img src="./img/Rectangle 7.jpg" alt="">
             </div>
             <div class="date">
@@ -122,18 +139,19 @@
 
 
             <div class="content">
-                <div class="img__content">
+                <div class="img__content" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="./img/Rectangle 14.png" alt="">
                 </div>
-                <div class="list__text-content">
+                <div class="list__text-content" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="text__content">
-                        <img src="./img/About us.png" alt="">
+                        <p class="text-header">About us</p>
                     </div>
                     <div class="text__content">
-                        <h2>VỀ CHÚNG TÔI</h2>
+                        <h2 class="text-title">VỀ CHÚNG TÔI</h2>
                     </div>
                     <div class="text__content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque omnis earum unde iure
+                        <p class="text-content-mobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque omnis earum unde iure
                             voluptatem perspiciatis consequatur adipisci obcaecati ut, libero assumenda placeat
                             recusandae nulla enim fuga voluptatum quo deleniti molestiae?</p>
                     </div>
@@ -145,69 +163,141 @@
         </div>
 
 
-        <div class="slide__content">
+        <div id="room" class="slide__content">
             <div class="slide__content-img slide__content-image">
                 <img src="./img/Rectangle 369.jpg" alt="">
             </div>
-            <div class="slide__any-text">
-                <div class="text__slide-content">
-                    <img class="header__text" src="./img/Favorite rooms.png" alt="">
+            <div class="slide__any-text" style="padding-top: 50px;">
+                <div class="text__slide-content" data-aos="zoom-in">
+                    <p class="text-header header__text">Havonite rooms</p>
                 </div>
-                <div class="text__slide-content">
-                    <h2>LOẠI PHÒNG</h2>
+                <div class="text__slide-content" data-aos="zoom-in">
+                    <h2 class="text-title">LOẠI PHÒNG</h2>
                 </div>
-                <div class="text__slide-content">
+                <div class="text__slide-content" data-aos="zoom-in">
                     <img src="./img/Union.png" alt="">
                 </div>
-                <div class="text__slide-content">
+                <div class="text__slide-content" data-aos="zoom-in-up">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sit!</p>
                     <p class="text">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
 
-            <div class="slide__show-mobile-all">
-                <div class="slide__show">
-                    <img src="./img/Rectangle 363.png" alt="">
-                    <img src="./img/Rectangle 100.png" alt="">
-                    <img src="./img/Rectangle 356.jpg" alt="">
-                    <img src="./img/Rectangle 363.png" alt="">
-                    <img src="./img/Rectangle 100.png" alt="">
-                    <img src="./img/Rectangle 356.jpg" alt="">
-                </div>
-            </div>
+            <div class="slide__show">
+                <div class="slide__show-all">
+                    <div class="slide__show-content">
+                        <div class="img__slide-show">
+                            <img src="/img/Rectangle 363.png" alt="">
+                        </div>
+                        <div class="slide__text-btn-all">
+                            <div class="slide__text-btn">
+                                <div class="name">Duluxe Room</div>
+                                <div class="text__slide-show">
+                                    Sở hữu thiết kế đương đại cùng nội thất trang nhã, Deluxe Room chắc chắn sẽ đem tới
+                                    cho
+                                    quý khách sự thư thái trong thời gian ở lại FTE Hotel
+                                </div>
+                                <a href="" class="btn__text">TÌM HIỂU THÊM</a>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="list__content-slide__show">
-                <div class="list__text-slide__show text__left">
-                    <h5>Senior Deluxe Room</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit, distinctio illum
-                        quisquam corrupti ullam quia! Quasi quibusdam voluptas iure?</p>
-                    <button>TÌM HIỂU THÊM</button>
-                </div>
+                    <div class="slide__show-content">
+                        <div class="img__slide-show">
+                            <img src="/img/Rectangle 363.png" alt="">
+                        </div>
+                        <div class="slide__text-btn-all">
+                            <div class="slide__text-btn">
+                                <div class="name">Executive Room</div>
+                                <div class="text__slide-show">
+                                    Sở hữu thiết kế đương đại cùng nội thất trang nhã, Deluxe Room chắc chắn sẽ đem tới
+                                    cho
+                                    quý khách sự thư thái trong thời gian ở lại FTE Hotel
+                                </div>
+                                <a href="" class="btn__text">TÌM HIỂU THÊM</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="list__text-slide__show text__mid">
-                    <h5>Senior Deluxe Room</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit, distinctio illum
-                        quisquam corrupti ullam quia! Quasi quibusdam voluptas iure?</p>
-                    <button>TÌM HIỂU THÊM</button>
-                </div>
+                    <div class="slide__show-content">
+                        <div class="img__slide-show">
+                            <img src="/img/Rectangle 363.png" alt="">
+                        </div>
+                        <div class="slide__text-btn-all">
+                            <div class="slide__text-btn">
+                                <div class="name">Duluxe Room</div>
+                                <div class="text__slide-show">
+                                    Sở hữu thiết kế đương đại cùng nội thất trang nhã, Deluxe Room chắc chắn sẽ đem tới
+                                    cho
+                                    quý khách sự thư thái trong thời gian ở lại FTE Hotel
+                                </div>
+                                <a href="" class="btn__text">TÌM HIỂU THÊM</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="list__text-slide__show text__right">
-                    <h5>Senior Deluxe Room</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit, distinctio illum
-                        quisquam corrupti ullam quia! Quasi quibusdam voluptas iure?</p>
-                    <button>TÌM HIỂU THÊM</button>
+                    <div class="slide__show-content">
+                        <div class="img__slide-show">
+                            <img src="/img/Rectangle 363.png" alt="">
+                        </div>
+                        <div class="slide__text-btn-all">
+                            <div class="slide__text-btn">
+                                <div class="name">Duluxe Room</div>
+                                <div class="text__slide-show">
+                                    Sở hữu thiết kế đương đại cùng nội thất trang nhã, Deluxe Room chắc chắn sẽ đem tới
+                                    cho
+                                    quý khách sự thư thái trong thời gian ở lại FTE Hotel
+                                </div>
+                                <a href="" class="btn__text">TÌM HIỂU THÊM</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide__show-content">
+                        <div class="img__slide-show">
+                            <img src="/img/Rectangle 363.png" alt="">
+                        </div>
+                        <div class="slide__text-btn-all">
+                            <div class="slide__text-btn">
+                                <div class="name">Duluxe Room</div>
+                                <div class="text__slide-show">
+                                    Sở hữu thiết kế đương đại cùng nội thất trang nhã, Deluxe Room chắc chắn sẽ đem tới
+                                    cho
+                                    quý khách sự thư thái trong thời gian ở lại FTE Hotel
+                                </div>
+                                <a href="" class="btn__text">TÌM HIỂU THÊM</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide__show-content">
+                        <div class="img__slide-show">
+                            <img src="/img/Rectangle 363.png" alt="">
+                        </div>
+                        <div class="slide__text-btn-all">
+                            <div class="slide__text-btn">
+                                <div class="name">Duluxe Room</div>
+                                <div class="text__slide-show">
+                                    Sở hữu thiết kế đương đại cùng nội thất trang nhã, Deluxe Room chắc chắn sẽ đem tới
+                                    cho
+                                    quý khách sự thư thái trong thời gian ở lại FTE Hotel
+                                </div>
+                                <a href="" class="btn__text">TÌM HIỂU THÊM</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="slide__content-pc">
+        <div id="culinary" class="slide__content-pc">
             <div class="slide__content">
                 <div class="slide__content-img">
-                    <img src="./img/Rectangle 370.jpg" alt="">
+                    <img src="./img/Rectangle 370.jpg" alt="" style="min-height: 600px !important;">
                 </div>
                 <div class="slide__any-text">
                     <div class="text__slide-content">
-                        <h2 class="h2" style="color: #fff;">TINH HOA ẨM THỰC</h2>
+                        <h2 class="text-title" style="color: #fff; padding-top: 50px;">TINH HOA ẨM THỰC</h2>
                     </div>
                     <div class="text__slide-content">
                         <img src="./img/Union.png" alt="">
@@ -220,7 +310,6 @@
                 </div>
 
                 <div class="list__slide-show">
-
                     <div class="slide__show-two">
                         <div class="text__slide-show-left">
                             <h3>RESTAURANT & LOUNGE BAR</h3>
@@ -242,13 +331,13 @@
         </div>
 
 
-        <div class="content__body">
+        <div id="conference" class="content__body">
             <div class="list__text__content-body">
-                <h2>Hội nghị</h2>
+                <h2 class="text-title">Hội nghị</h2>
                 <img src="./img/Union.png" alt="">
-                <div class="text__content-body">
+                <div class="text__content-body body-text-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quae!</p>
-                    <p class="text__bottom">Lorem ipsum dolor sit amet.</p>
+                    <p class="text__bottom text-bottom-mobile">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
 
@@ -284,16 +373,16 @@
 
 
 
-        <div class="service">
+        <div id="spa" class="service">
             <div class="list__service">
                 <img src="./img/Rectangle 14.jpg" alt="">
                 <div class="service__top">
                     <div class="list__service-content">
-                        <h2>Spa</h2>
+                        <h2 class="text-title">Spa</h2>
                         <img src="./img/Union.png" alt="">
                         <div class="list__service-content-end">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, placeat!</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p style="margin-top: -15px;">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
@@ -343,212 +432,355 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="feedback">
-        <div class="feedback__img">
-            <img src="./img/Rectangle 370.jpg" alt="">
-        </div>
-        <div class="feedback__all">
-            <div class="list__text__content-body feedback__text-content-body">
-                <img style="margin-top: 80px;" src="./img/Favorite rooms (1).png" alt="">
-                <h2>khách hàng nói về chúng tôi </h2>
-                <img class="feedback__img-top" src="./img/Union.png" alt="">
-                <div class="feedback__img-mid">
-                    <img src="./img/Ellipse 3.jpg" alt="">
-                </div>
-                <h6 class="author">Jason Breddack</h6>
-                <p class="author__ceo">CEO Khách sạn</p>
-
-                <div class="evaluate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="text__content-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tenetur eos autem totam.
-                    <p>
-                    <p class="text__bottom">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-
-                <div class="feedback__bottom">
-                    <div class="feedback__bottom-left"></div>
-                    <div class="feedback__bottom-mid"></div>
-                    <div class="feedback__bottom-right"></div>
-                </div>
+        <div id="utilities" class="feedback">
+            <div class="feedback__img">
+                <img src="./img/Rectangle 370.jpg" alt="">
             </div>
-        </div>
-    </div>
+            <div class="feedback__all">
+                <div class="list__text__content-body feedback__text-content-body">
+                    <p class="text-header" style="margin-top:50px;">Shecial semice</p>
+                    <h2 class="text-title" style="color: #fff;">khách hàng nói về chúng tôi </h2>
+                    <img class="feedback__img-top" src="./img/Union.png" alt="">
 
-    <div class="news">
-        <div class="list__news">
-            <div class="list__service-content">
-                <img src="./img/Favorite rooms (2).png" alt="">
-                <h2>Tin tức</h2>
-                <img src="./img/Union.png" alt="">
-                <div class="list__service-content-end">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, placeat!</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="list__news-option">
-                <div class="news__option">
-                    <div class="news__option-img">
-                        <img src="./img/Rectangle 356.jpg" alt="">
-                    </div>
-                    <div class="news__date">
-                        <p>28, Tháng 7, 2021</p>
-                    </div>
+                    <div class="feedback__mid-all">
+                        <div class="feedback__img-mid-all">
+                            <div class="feedback__img-mid">
+                                <img src="./img/Ellipse 3.jpg" alt="">
+                            </div>
+                            <h6 class="author">Jason Breddack</h6>
+                            <p class="author__ceo">CEO Khách sạn</p>
 
-                    <div class="list__news-option-content">
-                        <h6>We create functional, beautiful<br> inter for our clients since 1987.</h6>
-                        <p>Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Eum facere debitis
-                            ullam.</p>
-                        <div class="reading__news">
-                            <p>Đọc tiếp</p>
-                            <i class="fa-solid fa-arrow-right-long"></i>
+                            <div class="evaluate">
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                            </div>
+                            <div class="text__content-body">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum autem.
+                                <p>
+                                <p class="text__bottom">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+
+                            <div class="feedback__bottom">
+                                <div class="feedback__bottom-left"></div>
+                                <div class="feedback__bottom-mid"></div>
+                                <div class="feedback__bottom-right"></div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="news__option">
-                    <div class="news__option-img">
-                        <img src="./img/Rectangle 356.jpg" alt="">
-                    </div>
-                    <div class="news__date">
-                        <p>28, Tháng 7, 2021</p>
-                    </div>
+                        <div class="feedback__img-mid-all">
+                            <div class="feedback__img-mid">
+                                <img src="./img/Ellipse 3.jpg" alt="">
+                            </div>
+                            <h6 class="author">Jason Breddack</h6>
+                            <p class="author__ceo">CEO Khách sạn</p>
 
-                    <div class="list__news-option-content">
-                        <h6>We create functional, beautiful<br> inter for our clients since 1987.</h6>
-                        <p>Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Eum facere debitis
-                            ullam.</p>
-                        <div class="reading__news">
-                            <p>Đọc tiếp</p>
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </div>
-                    </div>
-                </div>
+                            <div class="evaluate">
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                                <i class="fa-solid fa-star evaluate__fa-star"></i>
+                            </div>
+                            <div class="text__content-body">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum autem.
+                                <p>
+                                <p class="text__bottom">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
 
-                <div class="news__option">
-                    <div class="news__option-img">
-                        <img src="./img/Rectangle 356.jpg" alt="">
-                    </div>
-                    <div class="news__date">
-                        <p>28, Tháng 7, 2021</p>
-                    </div>
-
-                    <div class="list__news-option-content">
-                        <h6>We create functional, beautiful<br> inter for our clients since 1987.</h6>
-                        <p>Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Eum facere debitis
-                            ullam.</p>
-                        <div class="reading__news">
-                            <p>Đọc tiếp</p>
-                            <i class="fa-solid fa-arrow-right-long"></i>
+                            <div class="feedback__bottom">
+                                <div class="feedback__bottom-left"></div>
+                                <div class="feedback__bottom-mid"></div>
+                                <div class="feedback__bottom-right"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="service__option news__btn">
-            <button>Xem tất cả</button>
+
+        <div id="tour" class="news">
+            <div class="list__news">
+                <div class="slide__any-text">
+                    <div class="text__slide-content text-news-mobile" style="margin-top: 110px;">
+                        <h2 class="text-title">TIN TỨC</h2>
+                    </div>
+                    <div class="text__slide-content">
+                        <img src="./img/Union.png" alt="">
+                    </div>
+                    <div class="text__slide-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+                            sit!</p>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+
+                <div class="list__news-option-all">
+                    <div class="list__news-option">
+                        <div class="news__option">
+                            <div class="news__option-img">
+                                <img src="./img/Rectangle 356.jpg" alt="">
+                            </div>
+                            <div class="news__date">
+                                <p>28, Tháng 7, 2021</p>
+                            </div>
+
+                            <div class="list__news-option-content">
+                                <h6>We create functional, beautiful inter for our clients since 1987.</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Eum facere debitis
+                                    ullam.</p>
+                                <div class="reading__news">
+                                    <p>Đọc tiếp</p>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news__option">
+                            <div class="news__option-img">
+                                <img src="./img/Rectangle 356.jpg" alt="">
+                            </div>
+                            <div class="news__date">
+                                <p>28, Tháng 7, 2021</p>
+                            </div>
+
+                            <div class="list__news-option-content">
+                                <h6>We create functional, beautiful inter for our clients since 1987.</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum facere debitis
+                                    ullam.</p>
+                                <div class="reading__news">
+                                    <p>Đọc tiếp</p>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news__option">
+                            <div class="news__option-img">
+                                <img src="./img/Rectangle 356.jpg" alt="">
+                            </div>
+                            <div class="news__date">
+                                <p>28, Tháng 7, 2021</p>
+                            </div>
+
+                            <div class="list__news-option-content">
+                                <h6>We create functional, beautiful inter for our clients since 1987.</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum facere debitis
+                                    ullam.</p>
+                                <div class="reading__news">
+                                    <p>Đọc tiếp</p>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news__option">
+                            <div class="news__option-img">
+                                <img src="./img/Rectangle 356.jpg" alt="">
+                            </div>
+                            <div class="news__date">
+                                <p>28, Tháng 7, 2021</p>
+                            </div>
+
+                            <div class="list__news-option-content">
+                                <h6>We create functional, beautiful inter for our clients since 1987.</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Eum facere debitis
+                                    ullam.</p>
+                                <div class="reading__news">
+                                    <p>Đọc tiếp</p>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news__option">
+                            <div class="news__option-img">
+                                <img src="./img/Rectangle 356.jpg" alt="">
+                            </div>
+                            <div class="news__date">
+                                <p>28, Tháng 7, 2021</p>
+                            </div>
+
+                            <div class="list__news-option-content">
+                                <h6>We create functional, beautiful inter for our clients since 1987.</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum facere debitis
+                                    ullam.</p>
+                                <div class="reading__news">
+                                    <p>Đọc tiếp</p>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news__option">
+                            <div class="news__option-img">
+                                <img src="./img/Rectangle 356.jpg" alt="">
+                            </div>
+                            <div class="news__date">
+                                <p>28, Tháng 7, 2021</p>
+                            </div>
+
+                            <div class="list__news-option-content">
+                                <h6>We create functional, beautiful inter for our clients since 1987.</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum facere debitis
+                                    ullam.</p>
+                                <div class="reading__news">
+                                    <p>Đọc tiếp</p>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service__option news__btn">
+                <button>Xem tất cả</button>
+            </div>
         </div>
-    </div>
 
 
-    <div class="footer">
-        <div class="footer__all">
-            <div class="footer__top">
-                <div class="footer__top-right"></div>
-                <div class="footer__logo-top">
+        <div id="contact" class="footer">
+            <div class="footer__all">
+                <div class="footer__top">
+                    <div class="footer__top-right"></div>
                     <img src="./img/slogan-66 2 (1).png" alt="">
-                </div>
-                <div class="footer__top-left"></div>
-            </div>
-
-            <div class="footer__mid">
-                <div class="footer__list-content">
-                    <h6>Liên hệ</h6>
-                    <p>121 King Street, Melbourne Victoria 3000 Australia</p>
-                    <p>+84 123 456 789</p>
-                    <p>youremail@example.com</p>
-                    <div class="contact__network">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <div class="contact__network-list"></div>
-                        <i class="fa-brands fa-twitter"></i>
-                        <div class="contact__network-list"></div>
-                        <i class="fa-brands fa-instagram"></i>
-                        <div class="contact__network-list"></div>
-                        <i class="fa-brands fa-youtube"></i>
-                    </div>
+                    <div class="footer__top-left"></div>
                 </div>
 
-                <div class="footer__list-content">
-                    <h6>liên kết</h6>
-                    <p>Giới thiệu</p>
-                    <p>Loại phòng</p>
-                    <p>Đặt phòng</p>
-                    <p>Dịch vụ</p>
-                    <p>Tin tức-Sự kiện</p>
-                </div>
-
-                <div class="footer__list-content">
-                    <h6>Dịch vụ</h6>
-                    <p>Xe đón đưa</p>
-                    <p>Ăn sáng</p>
-                    <p>Dịch vụ phòng</p>
-                    <p>Khuyến mại hấp dẫn</p>
-                </div>
-
-                <div class="footer__list-content">
-                    <h6>Newsletter</h6>
-                    <p>Nhận thông báo mới nhất</p>
-                    <div class="footer__input">
-                        <div class="input">
-                            <input type="text" placeholder="Nhập email...">
-                        </div>
-                        <div class="footer__input-avatar">
-                            <i class="fa-solid fa-envelope"></i>
+                <div class="footer__mid">
+                    <div class="footer__list-content">
+                        <h6>Liên hệ</h6>
+                        <a href="">
+                            <p>121 King Street, Melbourne Victoria 3000 Australia</p>
+                        </a>
+                        <a href="">
+                            <p>+84 123 456 789</p>
+                        </a>
+                        <a href="">
+                            <p>youremail@example.com</p>
+                        </a>
+                        <div class="contact__network">
+                            <a href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <div class="contact__network-list"></div>
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <div class="contact__network-list"></div>
+                            <a href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <div class="contact__network-list"></div>
+                            <a href="">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
 
-                <div class="footer__list-content">
-                    <h6>Map</h6>
-                    <div class="footer__map">
-                        <img src="./img/voi-nhung-cong-cu-rat-huu-ich-ban-da-co-the-in-truc-tiep-ngay-tren-google-map.jpg"
-                            alt="">
+                    <div class="footer__mid-content">
+                        <div class="footer__list-content">
+                            <h6>liên kết</h6>
+                            <a href="">
+                                <p>Giới thiệu</p>
+                            </a>
+                            <a href="">
+                                <p>Loại phòng</p>
+                            </a>
+                            <a href="">
+                                <p>Đặt phòng</p>
+                            </a>
+                            <a href="">
+                                <p>Dịch vụ</p>
+                            </a>
+                            <a href="">
+                                <p>Tin tức-Sự kiện</p>
+                            </a>
+                        </div>
+
+                        <div class="footer__list-content">
+                            <h6>Dịch vụ</h6>
+                            <a href="">
+                                <p>Xe đón đưa</p>
+                            </a>
+                            <a href="">
+                                <p>Ăn sáng</p>
+                            </a>
+                            <a href="">
+                                <p>Dịch vụ phòng</p>
+                            </a>
+                            <a href="">
+                                <p>Khuyến mại hấp dẫn</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__list-content">
+                        <h6>Newsletter</h6>
+                        <p>Nhận thông báo mới nhất</p>
+                        <div class="input-group flex-nowrap footer__email">
+                            <input type="text" class="form-control" placeholder="Email của bạn" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                            <span class="input-group-text" id="addon-wrapping" style="background: #d09754; color:#fff;">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="footer__list-content">
+                        <h6>Map</h6>
+                        <div class="footer__map">
+                            <img src="./img/voi-nhung-cong-cu-rat-huu-ich-ban-da-co-the-in-truc-tiep-ngay-tren-google-map.jpg"
+                                alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="all__underlined">
-                <div class="underlined"></div>
-            </div>
-
-            <div class="footer__bottom">
-                <div class="partners">
-                    <h6>Các đối tác</h6>
-                    <div class="all__partners">
-                        <img class="partners__top" src="./img/image 15.png" alt="">
-                        <img class="partners__mid" src="./img/z2798999761312_8ba6c3651439e3e2c32af92bf3e04d6c 1.png"
-                            alt="">
-                        <img class="partners__bottom" src="./img/PVDR Logo - Color Vertical 2 (1).png" alt="">
-                    </div>
+                <div class="all__underlined">
+                    <div class="underlined"></div>
                 </div>
 
-                <div class="partners">
-                    <h6>Đơn vị thanh toán</h6>
-                    <div class="all__partners">
-                        <img class="partners__top" src="./img/Rectangle 32.png" alt="">
+                <div class="footer__bottom-all">
+                    <div class="footer__bottom">
+                        <div class="partners">
+                            <h6>Các đối tác</h6>
+                            <div class="all__partners">
+                                <img class="partners__top" src="./img/image 15.png" alt="">
+                                <img class="partners__mid" src="./img/z2798999761312_8ba6c3651439e3e2c32af92bf3e04d6c 1.png"
+                                    alt="">
+                                <img class="partners__bottom" src="./img/PVDR Logo - Color Vertical 2 (1).png" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="partners">
+                            <h6>Đơn vị thanh toán</h6>
+                            <div class="all__partners">
+                                <img class="partners__top" src="./img/Rectangle 32.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
