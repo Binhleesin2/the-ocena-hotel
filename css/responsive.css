@@ -212,6 +212,9 @@
     .text__slide-show-left button{
         margin-top: -2px;
     }
+    .text-body-right-mb{
+        margin-top: -20px !important;
+    }
 }
 
 @media (max-width: 1023px){
