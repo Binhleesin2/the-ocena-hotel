@@ -28,10 +28,10 @@
     padding: 0 !important;
 }
 .col-lg-3{
-    padding: 0 18px !important;
+    /* padding: 0 18px !important; */
 }
 .col-md-12{
-    padding: 0 !important;
+    /* padding: 0 !important; */
 }
 
 .item__left-pool{
@@ -258,7 +258,7 @@
         margin: 0 !important;
     }
     .item__left-pool{
-        width: 90%;
+        width: 95%;
     }
     .item__right-pool{
         width: 100%;
@@ -271,6 +271,7 @@
         justify-content: center;
     }
     .post__imgage-text-pool{
-        margin: 10px;
+        margin: 10px 0;
+        width: 100%;
     }
 }

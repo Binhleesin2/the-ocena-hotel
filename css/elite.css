@@ -22,7 +22,7 @@
     padding: 0 !important;
 }
 .col-lg-3{
-    /* padding: 0px !important; */
+    padding: 0px !important;
 }
 
 .image-header-elite img{
@@ -139,7 +139,7 @@
     width: 280px;
     position: sticky;
     top: 1rem;
-    margin-left: 10px;
+    margin-left: 21px;
 }
 .item__right-header-pool{
     width: 100%;
@@ -196,8 +196,11 @@
     .container{
         width: unset !important;
         margin-top: 80px;
+        display: flex;
+        justify-content: center;
     }
-    .logo__mobile{
+    .row{
+        width: 90%;
     }
 }
 
