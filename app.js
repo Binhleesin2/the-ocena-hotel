@@ -66,7 +66,7 @@ $('.feedback__mid-all').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   dots:true,
-  arrows: false,
+  // arrows: false,
   // variableWidth: true,
   prevArrow: '<button class="chevron-prev"><i class="fas fa-chevron-left"></i></button>',
   nextArrow: '<button class="chevron-next"><i class="fas fa-chevron-right"></i></button>',
