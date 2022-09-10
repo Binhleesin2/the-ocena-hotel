@@ -404,6 +404,8 @@
     }
     .news-option-all{
         width: 100%;
-        padding-left: 5px;
+        display: flex !important;
+        justify-content: center;
+        /* padding-left: 5px; */
     }
 }
