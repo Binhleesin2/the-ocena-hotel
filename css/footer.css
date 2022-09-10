@@ -20,22 +20,18 @@
 }
 
 .footer{
-    margin-top: 56px;
-    min-height: 470px;
-    background: #191919;
-    width: 100%;
     display: flex;
     justify-content: center;
     font-family: 'Montserrat-Regular';
 }
 .footer__all{
-    width: 1147px;
+    width: 100%;
 }
 .footer__top{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 23px;
+    /* padding-top: 23px; */
 }
 .footer__top-right{
     width: 100%;
@@ -110,13 +106,14 @@
 }
 .underlined{
     border: 1px solid #FFFFFF;
-    width: 1147px;
+    width: 100%;
 }
 .footer__bottom{
     margin-top: 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 .partners h6{
     font-family: 'Montserrat';
