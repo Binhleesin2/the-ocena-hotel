@@ -76,8 +76,8 @@ $('.list__news-option').slick({
   slidesToShow: 3,
   // autoplay: true,
   autoplaySpeed: 2000,
-  arrows: false,
-  variableWidth: true,
+  // arrows: false,
+  // variableWidth: true,
   prevArrow: '<button class="chevron-prev"><i class="fas fa-chevron-left"></i></button>',
   nextArrow: '<button class="chevron-next"><i class="fas fa-chevron-right"></i></button>',
   responsive: [
@@ -93,6 +93,7 @@ $('.list__news-option').slick({
       breakpoint: 480,
       settings: {
         arrows: false,
+        // variableWidth: true,
         slidesToShow: 1
       }
     }

@@ -877,17 +877,19 @@
 }
 
 
-.list__news-option-all {
+.list__news-option{
     margin-top: -50px;
     width: 100%;
 }
 .news-option-all{
+    /* width: 100%; */
     padding: 0 10px;
 }
 .list__news-option {
     width: 100%;
     display: flex !important;
     justify-content: space-between !important;
+    align-items: center;
 }
 .list__news-option .slick-arrow {
     position: absolute;
@@ -907,7 +909,7 @@
 .list__news-option .chevron-prev {
     left: 0;
     z-index: 2;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .list__news-option .chevron-next {

@@ -382,30 +382,15 @@
 }
 
 @media (max-width: 1023px) {
-    .list__news{
-       
-    }
-    .news__option{
-        width: 90%;
-        margin: 10px 0px;
-    }
-    .news__option-img{
-        width: 380px;
-        height: 190px;
-    }
-    .news__option-img img{
-        width: 308px;
-        object-fit: cover;
-    }
-    .news__btn{
-        margin-top: 30px;
-    }
     .list__news-option{
+        width: 100% !important;
+        margin: 20px 0;
     }
     .news-option-all{
-        width: 100%;
         display: flex !important;
         justify-content: center;
-        /* padding-left: 5px; */
+    }
+    .news__option{
+        width: 95%;
     }
 }
